@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import PersonIcon from '@mui/icons-material/Person';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const pages = [
   { name: 'About Me', path: '/' },
@@ -22,6 +22,7 @@ const pages = [
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const location = useLocation();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -86,7 +87,7 @@ function ResponsiveAppBar() {
               {pages.map((page) => (
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <Link to={page.path} style={{ textDecoration: 'none', color: 'inherit', fontWeight: location.pathname === page.path ? 'bold' : 'normal' }}>
                       {page.name}
                     </Link>
                   </Typography>
@@ -121,7 +122,7 @@ function ResponsiveAppBar() {
                 component={Link}
                 to={page.path}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 3, color: 'black', display: 'block', mr: 4, fontSize: '16px' }}
+                sx={{ my: 3, color: 'black', display: 'block', mr: 4, fontSize: '16px', fontWeight: location.pathname === page.path ? 'bold' : 'normal' }}
               >
                 {page.name}
               </Button>
