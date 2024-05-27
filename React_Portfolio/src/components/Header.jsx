@@ -22,7 +22,7 @@ const pages = [
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const location = useLocation();
+  const location = useLocation(); // location helps me determine the section where the user is, and using the map. y can use a thirniary opperator to highlight the one the user is in at the moment.
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -40,8 +40,6 @@ function ResponsiveAppBar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex', fontSize: '1.60rem' },

@@ -56,4 +56,9 @@ footer {
   padding: 1rem 0;
 }
 
-
+.aboutMeText {
+  text-align: justify;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: larger;
+}
