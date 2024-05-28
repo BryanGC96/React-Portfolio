@@ -17,5 +17,5 @@ We used several dependencies, the main one beeing:
 ![example img of the running application](./src/assets/442423476_1494502224814750_6118515429734876301_n.png)
 
 ### Project Info:
-- **GitHub Repository** :
-- **Running Application** :
+- **GitHub Repository** : https://github.com/BryanGC96/React-Portfolio
+- **Running Application** : https://665558e73fd68da516e581d2--sage-zabaione-82f7ce.netlify.app/
