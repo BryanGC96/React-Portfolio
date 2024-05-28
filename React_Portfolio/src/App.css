@@ -62,3 +62,28 @@ footer {
   margin-right: 25%;
   font-size: larger;
 }
+
+.aboutMeList {
+margin-left: 25%;
+margin-right: 25%;
+text-align: left;
+font-size: larger;
+text-align: justify;
+}
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

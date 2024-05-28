@@ -11,9 +11,9 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="app-container">
         <ResponsiveAppBar />
-        <main>
+        <main className='content'>
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />
