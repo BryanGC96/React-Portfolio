@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import TextField from '@mui/material/TextField';
@@ -6,22 +6,32 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
+// Using 'FORMIK' dependency together with 'Yup'.
 const ContactForm = () => {
+    const [submittedData, setSubmittedData] = useState(null);
+    const [successMessage, setSuccessMessage] = useState('');
   const formik = useFormik({
-    initialValues: {
+    initialValues: { // specifies the initial state of the form fields.
       name: '',
       email: '',
       message: '',
     },
-    validationSchema: Yup.object({
+    // Defines the validation rules using Yup.
+    // Using 'Yup' to define the validation schema.
+    validationSchema: Yup.object({ 
       name: Yup.string().required('Name is required'),
       email: Yup.string()
-        .email('Invalid email address')
+        .email('Invalid email address') // 'Yup' makes sure the user inputs a 'VALID' email adress. Just like 'RegEx' but in a more 'readable' way.
         .required('Email is required'),
       message: Yup.string().required('Message is required'),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    // This is to handle what happens to the form after submission.
+    // We can add any logic here to see what happens after clicking submit with the data.
+    onSubmit: (values, { resetForm }) => {
+        setSubmittedData(values);
+        setSuccessMessage('Mail sent to Bryan');
+        alert('Message sent successfully');
+        resetForm();
     },
   });
 
@@ -37,7 +47,7 @@ const ContactForm = () => {
       }}
     >
       <Typography variant="h4" gutterBottom>
-        Contact Us
+        Contact
       </Typography>
       <TextField
         id="name"
