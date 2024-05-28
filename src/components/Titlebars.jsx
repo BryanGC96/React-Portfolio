@@ -4,7 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import SocialNetworkApiPic from '../assets/socialnetworkapipic.png';
 import NoteTakerExample from '../assets/NoteTakerExample.png';
-import WeatherDashboard from '../assets/WeatherDashboard.png';
+import WeatherDashboard from '../assets/weatherDashboard.png';
 import WorkDay from '../assets/workDay.png';
 import CodingQuiz from '../assets/codingQuiz.png';
 import ObjectRelational from '../assets/objectRelational.png';
