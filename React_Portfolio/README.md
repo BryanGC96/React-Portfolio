@@ -1,8 +1,21 @@
-# React + Vite
+# React Portfolio
+This project was created using new dependencies learned inside the bootcamp, one of them beeing **REACT**, this allows us to make a *'single page application'*, and in this way, we created a web **Professional Portfolio**, so that any recruiter can enter the URL, and find more about the candidate in question.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It shows personal information, a portfolio of projects created, it allows the user to reach and contact the candidate, and also allows to see and download a Resume in 'pdf'.
 
-Currently, two official plugins are available:
+## How was this achived?
+We used several dependencies, the main one beeing:
+ - **REACT** for the display.
+ - **formik** and **yup** to handdle the contact form.
+ - **MUI Materials** as a framework.
+ - **vitejs** to start the project files.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ ## How to start the project:
+ The interviewer just need to follow the given URL link, and click on any of the desired navbar options to read each one of them. The interviewer can also reach the candidate by sending a mail, and also download the CV as a PDF file.
+
+ ### Example Image:
+![example img of the running application](./src/assets/442423476_1494502224814750_6118515429734876301_n.png)
+
+### Project Info:
+- **GitHub Repository** :
+- **Running Application** :
